@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Muse.ai Starter Kit — Connections, Skills & Workflows</title>
+<meta name="description" content="Copy-paste Muse.ai connections, agent templates, and 20 writing skill modules. Beginner-friendly, open source.">
+<style>
+:root{--p:#6366F1;--d:#1E293B;--bg:#F8FAFC;--card:#fff;--mut:#475569}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--d);line-height:1.6}
+a{color:var(--p)}header,main,footer{max-width:980px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:56px 0 32px}.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 12px}
+.hero p{font-size:1.15rem;color:var(--mut);max-width:700px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--p);color:#fff!important;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:700;margin:6px;transition:.15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(99,102,241,.35)}
+.btn.dark{background:var(--d)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:28px 0}
+.card{background:var(--card);border:1px solid #E2E8F0;border-radius:16px;padding:20px}.card:hover{border-color:var(--p)}
+.card h3{margin-top:0}code{background:#EEF2FF;padding:2px 6px;border-radius:6px;word-break:break-all}
+pre{background:var(--d);color:#E2E8F0;padding:16px;border-radius:12px;overflow:auto;position:relative}
+pre button{position:absolute;top:10px;right:10px;background:var(--p);color:#fff;border:0;border-radius:8px;padding:6px 10px;cursor:pointer}
+section{padding:20px 0}h2{font-size:1.7rem}.small{color:var(--mut);font-size:.9rem}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--d);color:#fff;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;z-index:10}
+.sticky b{background:#fff;color:var(--d);padding:4px 10px;border-radius:8px;letter-spacing:1px}
+.sticky button{background:var(--p);color:#fff;border:0;border-radius:999px;padding:8px 14px;cursor:pointer;font-weight:700}
+body{padding-bottom:76px}
+</style></head><body>
+<header class="hero">
+<h1>🚀 Supercharge Your AI with Muse.ai</h1>
+<p>The ultimate collection of Muse.ai connections, skills, and workflows. Copy-paste ready for any project — no setup maze.</p>
+<p><a class="btn" href="https://github.com/crtGhoul/muse-ai-starter-kit">⭐ Star on GitHub</a>
+<a class="btn dark" href="https://muse.ai">🔗 Try Muse.ai with Code 0NS5DG</a></p>
+<p class="small">Code <b>0NS5DG</b> — enter it if Muse.ai prompts you on signup. Bonus terms are shown on Muse.ai's signup screen; this kit doesn't guarantee a specific token amount.</p>
+</header>
+<main>
+<section><h2>What's inside</h2><div class="grid">
+<div class="card"><h3>🔌 3 Integration Patterns</h3><p>API client, MCP bridge, and webhook handler — with real, readable code you can adapt.</p></div>
+<div class="card"><h3>🤖 3 Agent Templates</h3><p>Content Creator, Code Reviewer, and Social Media — prompt-first, model-swappable.</p></div>
+<div class="card"><h3>✍️ 20 Writing Skills</h3><p>Copywriting, storytelling, technical writing, SEO, and coding — each a complete prompt template.</p></div>
+<div class="card"><h3>⚡ One-Click Start</h3><p>Clone, serve locally, and copy any workflow in under a minute. See below.</p></div>
+</div><p class="small">Honest count: 3 + 3 + 20 = 26 templates in this kit. Not affiliated with Muse.ai or Meta. Endpoints and model names in the code are templates — verify them against Muse.ai's current docs before production use.</p></section>
+
+<section><h2>Start in 60 seconds</h2>
+<pre><button onclick="copyBlock(this)">Copy</button><code>git clone https://github.com/crtGhoul/muse-ai-starter-kit.git
+cd muse-ai-starter-kit
+python3 -m http.server 3000
+# Open http://localhost:3000</code></pre>
+<p>Or run <code>bash scripts/quickstart.sh</code> — it does the same steps and prints the referral reminder.</p></section>
+
+<section><h2>Connections</h2><div class="grid">
+<div class="card"><h3>API</h3><p><code>connections/api/muse-api-client.js</code></p><p>generate, chat, edit, embeddings, list models.</p></div>
+<div class="card"><h3>MCP</h3><p><code>connections/mcp/muse-mcp-server.py</code></p><p>Expose Muse.ai as MCP tools for MCP-compatible hosts.</p></div>
+<div class="card"><h3>Webhooks</h3><p><code>connections/webhooks/muse-webhook-handler.js</code></p><p>Express handler for signup and generation events.</p></div>
+<div class="card"><h3>Agents</h3><p><code>connections/agents/</code></p><p>Content Creator, Code Reviewer, Social Media prompts.</p></div>
+</div></section>
+
+<section><h2>Writing skills — pick one, paste, replace [BRACKETS]</h2>
+<div class="grid">
+<div class="card"><h3>Copywriting</h3><p>sales-page, email-sequence, landing-page, cta-buttons</p></div>
+<div class="card"><h3>Storytelling</h3><p>hero-journey, brand-story, testimonial-template, case-study</p></div>
+<div class="card"><h3>Technical</h3><p>api-docs, readme, tutorial, faq</p></div>
+<div class="card"><h3>SEO</h3><p>keyword-research, meta-tags, blog-outline, backlink-pitch</p></div>
+<div class="card"><h3>Coding</h3><p>python-script, javascript-utility, sql-query, bash-script</p></div>
+</div><p>Every skill is in <code>connections/skills/</code> as a Markdown file you can copy straight into Muse.ai.</p></section>
+
+<section><h2>Share it</h2>
+<p>Found it useful? Star the repo and share the copy-paste Reddit draft in <code>reddit-post.md</code>. Please follow each subreddit's self-promotion rules — this kit deliberately has no auto-poster.</p>
+<p class="small">This is an independent, open-source starter kit. Muse.ai is a separate service with its own terms, pricing, and signup bonus — verify the current offer on muse.ai itself.</p>
+</section>
+</main>
+<footer class="sticky"><span>💡 Muse.ai code:</span><b id="refCode">0NS5DG</b>
+<button onclick="navigator.clipboard.writeText('0NS5DG');this.textContent='Copied!'">Copy code</button>
+<a class="btn" style="margin:0;padding:8px 14px" href="https://muse.ai">Try Muse.ai →</a></footer>
+<script>
+function copyBlock(b){const c=b.nextElementSibling.innerText;navigator.clipboard.writeText(c);b.textContent='Copied!';setTimeout(()=>b.textContent='Copy',1500)}
+if(location.href.includes('ref=0NS5DG')){try{localStorage.setItem('referredBy','0NS5DG')}catch(e){}}
+</script></body></html>
