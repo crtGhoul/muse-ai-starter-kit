@@ -80,3 +80,14 @@ This kit has **no auto-poster**. Automated posting risks bans and breaks subredd
 ## 📜 License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+## Velazquez Lab
+
+More free tools from Cesar Velazquez: [Velazquez Lab](https://velazquez-lab.pages.dev)
+
+- GitHub: https://github.com/crtGhoul
+- Codeberg: https://codeberg.org/crtGhoul
+- YouTube: https://www.youtube.com/@VelazquezLabs
+- Reddit: https://www.reddit.com/user/Manteqaada/
